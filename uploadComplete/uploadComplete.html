@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="uploadComplete.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+   
+    <script src="../bootstrapJquery/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar col-auto ml-3 p-0">
+            <img class="logo" src="../master/img/s.png" alt="#">
+
+            <div class="text-dark">
+                <div class="categories">
+                    <a href="#">
+                        <i id="catIcon" class="fa fa-bars text-warning"></i>
+                    </a>
+                    <span class="text-dark px-1 align-top">
+                        Kategoriler
+                    </span>
+                </div>
+
+            </div>
+            <div>
+                <div class="input-group">
+                    <input class="search input-group-text" type="search" name="search" id="search"
+                        placeholder="Merak ettiğin bir kelimeyi hemen bulalım">
+                    <div>
+                        <button class="btn btn-succes text-warning" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="uploadIcon bg-warning">
+                <button>
+                    <i class="fa fa-upload"></i>
+                </button>
+                <h5>
+                    &nbsp; Dosya yükle&nbsp;
+                </h5>
+
+
+            </div>
+
+
+            <div class="navicon">
+                <a href=""><i class="text-dark fa fa-bell mr-2"></i></a>
+                <a href=""><i class="text-dark fa fa-user mr-4"></i></a>
+            </div>
+
+        </div>
+        <div id="dropMenu" class="dropMenu">
+            <ul id="dropUl" class="list-inline pl-3">
+                <a href="#">
+                    <li>Sağlık</li>
+                </a>
+                <a href="#">
+                    <li>Edebiyat</li>
+                </a>
+                <a href="#">
+                    <li>Teknoloji</li>
+                </a>
+                <a href="#">
+                    <li>Bilim</li>
+                </a>
+                <a href="#">
+                    <li>Sanat</li>
+                </a>
+                <a href="#">
+                    <li>Mimarlık</li>
+                </a>
+                <a href="#">
+                    <li>Muhasebe</li>
+                </a>
+                <a href="#">
+                    <li>Ticaret</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sliderMenu">
+        <div class="p-5 col-6 mx-auto justify-content-center pagination align-items-lg-center text-center">
+            <i class="text-warning fa fa-cloud-upload pr-3 fa-5x"></i>
+            <h1 class="text-white font-weight-lighter">
+                <section class="text-warning">Hızlıca Dosyanı Yükle</section> <strong>1GB</strong>'a kadar Ücretsiz.
+            </h1>
+        </div>
+
+        <div class="p-3">
+            <div class="rounded-lg p-5 bg-white text-center col-12">
+                <div class="card-deck">
+
+                    <div id="uploadImg" class="card col-2 p-3">
+                        <img src="img/1.jpg" class="img-thumbnail" alt="">
+                    </div>
+
+                    <div id="uploadArea" class="col-10 p-3 ">
+                        <div>
+                            <h2 class="text-left">Emile Zola - Nasıl Ölünür</h2>
+                            <div class="text-left pagination">
+                                <i class="text-warning fa fa-book-open fa-3x"></i>
+                                <h6 class="my-3">&nbsp&nbsp123 Sayfa</h6>
+                                <i class="text-warning pl-5 fa fa-file fa-3x"></i>
+                                <h6 class="my-3">&nbsp&nbsp12 Mb</h6>
+                            </div>
+                        </div>
+                        <div class="pt-5 w-75 mx-auto">
+                            <div class="progress">
+                                <div id="progressBar"
+                                    class="bg-warning progress-bar progress-bar-striped progress-bar-animated"
+                                    role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <strong style="font-size: 150%;" id="progressText"></strong>
+                    </div>
+                </div>
+
+                <div class="container text-left">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="selectLang">Dil Seçimi</label>
+                                    <select class="form-control" name="selectLang" id="selectLang">
+                                        <option value="tr">Türkçe</option>
+                                        <option value="en">English</option>
+                                        <option value="fr">Franchise</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="baslik">Başlık</label>
+                                    <input class="form-control" type="text" name="baslik" id="baslik"
+                                        placeholder="Başlık">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="doi">DOI Nu</label>
+                                    <input class="form-control" type="text" name="doi" id="doi"
+                                        placeholder="DOI Nu giriniz">
+
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="anahtarKelimeler">Anahtar Kelimeler</label>
+                                    <input class="form-control" type="text" name="anahtarKelimeler"
+                                        id="anahtarKelimeler" placeholder="Anahtar Kelimeler">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <label for="yazarlar">Yazarlar</label>
+                                <input class="form-control" type="text" name="yazarlar" id="yazarlar"
+                                    placeholder="Yazarlar">
+                            </div>
+                        </div>
+                        <div class="mt-4 col row font-weight-bold">
+                            <div class="col-3">
+                                <h4>Erişim Türü*</h4>
+                                <div class="form-check">
+                                    <i class="fa-2x text-warning fa fa-lock"></i>
+                                    <input class="checked spinner-border-sm" type="radio" value="0" name="accesOff"
+                                        id="accesOff" checked>
+                                    <label for="accesOff">Erişime Kapalı</label>
+                                </div>
+                            </div>
+
+                            <div class="pt-2">
+                                <label for="anahtarKelimeler"></label>
+                                <div class="form-check">
+                                    <i class="ml-5 fa-2x text-warning fa fa-share-alt"></i>
+                                    <input class="spinner-border-sm" type="radio" value="1" name="accesOn" id="accesOn">
+                                    <label for="accesOff">Herkese Açık</label>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <h4>Belge Tipi*</h4>
+                                <div class="form-group">
+                                    <select class="form-control" name="selectLang" id="selectLang">
+                                        <option value="0">Belge tipini seçiniz</option>
+                                        <option value="1">PDF</option>
+                                        <option value="2">WORD</option>
+                                        <option value="3">OTHER</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="informationCard">
+                            <p id="check" class="p-md-3">Bu dosyayı sadece siz görüntüleyebileceksiniz</p>
+                        </div>
+                        <div class="form-group">
+                            <label class="h5" for="belgeOzeti">Belge Özeti</label>
+                            <textarea class="form-control" name="tar" id="tar" cols="156" rows="10"
+                                placeholder="Belge Özetinizi bu alana giriniz..."></textarea>
+                        </div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="form-control btn-warning btn-lg  w-25 mx-auto" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Kaydet
+                        </button>
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Dosyanız başarıyla kaydedildi...</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fa-5x text-primary border-0 fa fa-check"></i><br>
+                    İçerik çıkarım işlemi için kuyruğa alındı. <br>
+                    İşlemlerinizi ve içe aktarım detaylarını <br>
+                    <a href="../myDigitalDocuments/myDigitalDocuments.html" class="text-primary">Dijital Dokümanlarım </a> sayfanızdan takip edebilirsiniz.
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-warning btn-lg  mx-auto">Dijital Dökümanlarım'a git</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot col-12 p-5">
+            <div class="pagination h6">
+                <div class="col-3 list-group pt-3">
+                    <h5 class="text-warning">Hakkımızda</h5>
+                    <a href="#" class="pt-3">Sanal kütüphane nedir?</a>
+                    <a href="#" class="pt-3">Özel teşekkür</a>
+                    <a href="#" class="pt-3">Blog</a>
+                    <a href="#" class="pt-3">Ekibe katıl</a>
+                    <a href="#" class="pt-3">İletişime geç</a>
+                </div>
+
+                <div class="col-3 list-group pt-3">
+                    <h5 class="text-warning">Destek</h5>
+                    <a href="#" class="pt-3">Sorun bildirin</a>
+                    <a href="#" class="pt-3">Yardım konuları</a>
+                </div>
+
+                <div class="col-3 list-group pt-3">
+                    <h5 class="text-warning">Yasal Bilgilendirme</h5>
+                    <a href="#" class="pt-3">Yükleme kuralları</a>
+                    <a href="#" class="pt-3">Telif hakları</a>
+                </div>
+
+                <div class="socialIcon col-3 pt-3">
+                    <h5 class="text-warning">İletişim</h5>
+                    <div class="blockquote text-lg-left ">
+                        <div class="text-warning h1 mt-4 mb-4">
+                            <a href="#"> <i class="fa fa-facebook-square "></i></a>
+                            <a href="#"> <i class="fa fa-instagram"></i></a>
+                            <a href="#"> <i class="fa fa-twitter-square"></i></a>
+                            <a href="#"> <i class="fa fa-linkedin-square"></i></a>
+                            <a href="#"> <i class="fa fa-youtube-square"></i></a>
+                        </div>
+
+                        <h6>Kozyatağı Mah. Bayar Cad.<br>Gülbahar Sk. No:17/123<br>P.K:34742
+                            Kadıköy/İstanbul<br><br>0(216)5990438<br>info@sanalkutuphane.org</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        ///////
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        });
+        ///////
+        $(document).ready(function () {
+            $('input[type="radio"]').click(function () {
+                $('input[type="radio"]').each(function () {
+                    $(this).toggleClass('checked');
+                    $(this).hasClass('checked') ? $(this).prop('checked', true) : $(this).prop('checked', false);
+                    $(this).hasClass('checked') ? $('#check').text('Bu dosyayı herkes görüntüleyebilir') :
+                        $('#check').text('Bu dosyayı sadece siz görüntüleyebileceksiniz');
+                });
+            });
+        });
+        ///////
+        $(function () {
+            $('#catIcon').hover(function () {
+                $('#dropMenu').css('visibility', 'visible');
+            }),
+                $('#dropMenu').mouseleave(function () {
+                    $('#dropMenu').css('visibility', 'hidden');
+                });
+        });
+        ////////
+        let progressValue = document.getElementById("progressBar").style.width;
+        progressValue = progressValue + " Dosya yüklendi";
+        document.querySelector("#progressText").innerHTML = progressValue;
+    </script>
+
+</body>
+
+</html>

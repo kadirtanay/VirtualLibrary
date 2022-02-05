@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+    <script src="../bootstrapJquery/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar col-auto ml-3 p-0">
+            <img class="logo" src="../master/img/s.png" alt="#">
+
+            <div class="text-dark">
+                <div class="categories">
+                    <a href="#">
+                        <i id="catIcon" class="fa fa-bars text-warning"></i>
+                    </a>
+                    <span class="text-dark px-1 align-top">
+                        Kategoriler
+                    </span>
+                </div>
+
+            </div>
+            <div>
+                <div class="input-group">
+                    <input class="search input-group-text" type="search" name="search" id="search"
+                        placeholder="Merak ettiğin bir kelimeyi hemen bulalım">
+                    <div>
+                        <button class="btn btn-succes text-warning" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="uploadIcon bg-warning">
+                <button>
+                    <i class="fa fa-upload"></i>
+                </button>
+                <h5>
+                    &nbsp; Dosya yükle&nbsp;
+                </h5>
+
+
+            </div>
+
+
+            <div class="navicon">
+                <a href=""><i class="text-dark fa fa-bell mr-2"></i></a>
+                <a href=""><i class="text-dark fa fa-user mr-4"></i></a>
+            </div>
+
+        </div>
+        <div id="dropMenu" class="dropMenu">
+            <ul id="dropUl" class="list-inline pl-3">
+                <a href="#">
+                    <li>Sağlık</li>
+                </a>
+                <a href="#">
+                    <li>Edebiyat</li>
+                </a>
+                <a href="#">
+                    <li>Teknoloji</li>
+                </a>
+                <a href="#">
+                    <li>Bilim</li>
+                </a>
+                <a href="#">
+                    <li>Sanat</li>
+                </a>
+                <a href="#">
+                    <li>Mimarlık</li>
+                </a>
+                <a href="#">
+                    <li>Muhasebe</li>
+                </a>
+                <a href="#">
+                    <li>Ticaret</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sliderMenu">
+        <div class="p-5 col-6 mx-auto justify-content-center pagination align-items-lg-center text-center">
+        </div>
+
+        <div class="p-3">
+            <div class="rounded-lg bg-white">
+
+                <div class="row col-12">
+                    <div class="col-3">
+                        <div class="mt-5 text-center">
+                            <div id="profilePhoto" class="mx-auto d-flex align-items-center">
+                                <h1 class="mx-auto">KT</h1>
+                            </div>
+                            <h4>KADİR TANAY</h4>
+                        </div>
+
+                        <button id="enableInp"
+                            class="pl-3 pr-3 rounded-lg btn btn-warning mx-auto d-flex align-items-center">
+                            <i class="fa fa-edit fa-2x"></i>
+                            <h5 class="pl-3 p-1 mx-auto">Profilimi Düzenle</h5>
+                        </button>
+                    </div>
+
+
+
+                    <div class="col-9 border-left">
+                        <div class="container text-left">
+                            <form>
+                                <div class="mt-lg-5">
+                                    <h4>Temel Bilgiler</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label for="adiniz">Adınız</label>
+                                            <input class="form-control" type="text" name="adiniz" id="adiniz"
+                                                placeholder="Adınızı Giriniz" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="soyadiniz">Soyadınız</label>
+                                            <input class="form-control" type="text" name="soyadiniz" id="soyadiniz"
+                                                placeholder="Soyadınızı Giriniz" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 pl-lg-5">
+                                        <div class="form-group">
+                                            <label for="sifre">Şifreniz</label>
+                                            <input class="form-control" type="password" name="sifre" id="sifre"
+                                                placeholder="Şifrenizi giriniz" disabled>
+                                            <label id="sonDT" class="pt-2 h6 text-warning" for="sonDT">Son değiştirme:
+                                                DD MMM
+                                                YYYY</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="mt-5 pt-5">
+                                    <h4>İletişim Bilgileriniz</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label for="eposta">E-Posta Adresiniz</label>
+                                            <input class="form-control" type="text" name="eposta" id="eposta"
+                                                placeholder="mail@mail.com" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 pl-lg-5">
+                                        <div class="form-group">
+                                            <label for="telno">Telefon Numaranız</label>
+                                            <input class="form-control" type="tel" name="telno" id="telno"
+                                                placeholder="05XXXXXXXXX" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="mt-4 mb-lg-5 form-control btn-warning btn-lg w-25">
+                                    Kaydet
+                                </button>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="foot col-12 p-5">
+            <div class="pagination h6">
+                <div class="col-3 list-group pt-3">
+                    <h5 class="text-warning">Hakkımızda</h5>
+                    <a href="#" class="pt-3">Sanal kütüphane nedir?</a>
+                    <a href="#" class="pt-3">Özel teşekkür</a>
+                    <a href="#" class="pt-3">Blog</a>
+                    <a href="#" class="pt-3">Ekibe katıl</a>
+                    <a href="#" class="pt-3">İletişime geç</a>
+                </div>
+
+                <div class="col-3 list-group pt-3">
+                    <h5 class="text-warning">Destek</h5>
+                    <a href="#" class="pt-3">Sorun bildirin</a>
+                    <a href="#" class="pt-3">Yardım konuları</a>
+                </div>
+
+                <div class="col-3 list-group pt-3">
+                    <h5 class="text-warning">Yasal Bilgilendirme</h5>
+                    <a href="#" class="pt-3">Yükleme kuralları</a>
+                    <a href="#" class="pt-3">Telif hakları</a>
+                </div>
+
+                <div class="socialIcon col-3 pt-3">
+                    <h5 class="text-warning">İletişim</h5>
+                    <div class="blockquote text-lg-left ">
+                        <div class="text-warning h1 mt-4 mb-4">
+                            <a href="#"> <i class="fa fa-facebook-square "></i></a>
+                            <a href="#"> <i class="fa fa-instagram"></i></a>
+                            <a href="#"> <i class="fa fa-twitter-square"></i></a>
+                            <a href="#"> <i class="fa fa-linkedin-square"></i></a>
+                            <a href="#"> <i class="fa fa-youtube-square"></i></a>
+                        </div>
+
+                        <h6>Kozyatağı Mah. Bayar Cad.<br>Gülbahar Sk. No:17/123<br>P.K:34742
+                            Kadıköy/İstanbul<br><br>0(216)5990438<br>info@sanalkutuphane.org</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('#enableInp').click(function () {
+            $('input').removeAttr('disabled');
+        });
+        /*Right Click Menu Function*/
+        $('#rightClickMenu').hide();
+        $('td>img').bind("contextmenu", function (e) {
+
+            $('#rightClickMenu').css({
+                top: e.pageY + 'px',
+                left: e.pageX + 'px'
+            }).show();
+            $('#rightClickMenu').show();
+
+            return false;
+
+        });
+        $(document).ready(function () {
+
+            $('#rightClickMenu').click(function () {
+                $('#rightClickMenu').hide();
+            });
+            $(document).click(function () {
+                $('#rightClickMenu').hide();
+            });
+
+        });
+        /*Drop Menu Function*/
+        $(function () {
+            $('#catIcon').hover(function () {
+                $('#dropMenu').css('visibility', 'visible');
+            }),
+                $('#dropMenu').mouseleave(function () {
+                    $('#dropMenu').css('visibility', 'hidden');
+                });
+        });
+
+
+
+    </script>
+</body>
+
+</html>

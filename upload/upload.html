@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="upload.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+    <script src="../bootstrapJquery/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar col-auto ml-3 p-0">
+            <img class="logo" src="../master/img/s.png" alt="#">
+
+            <div class="text-dark">
+                <div class="categories">
+                    <a href="#">
+                        <i id="catIcon" class="fa fa-bars text-warning"></i>
+                    </a>
+                    <span class="text-dark px-1 align-top">
+                        Kategoriler
+                    </span>
+                </div>
+
+            </div>
+            <div>
+                <div class="input-group">
+                    <input class="search input-group-text" type="search" name="search" id="search"
+                        placeholder="Merak ettiğin bir kelimeyi hemen bulalım">
+                    <div>
+                        <button class="btn btn-succes text-warning" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="uploadIcon bg-warning">
+                <button>
+                    <i class="fa fa-upload"></i>
+                </button>
+                <h5>
+                   &nbsp; Dosya yükle&nbsp;
+                </h5>
+
+
+            </div>
+
+
+            <div class="navicon">
+                <a href=""><i class="text-dark fa fa-bell mr-2"></i></a>
+                <a href=""><i class="text-dark fa fa-user mr-4"></i></a>
+            </div>
+
+        </div>
+        <div id="dropMenu" class="dropMenu">
+            <ul id="dropUl" class="list-inline pl-3">
+                <a href="#">
+                    <li>Sağlık</li>
+                </a>
+                <a href="#">
+                    <li>Edebiyat</li>
+                </a>
+                <a href="#">
+                    <li>Teknoloji</li>
+                </a>
+                <a href="#">
+                    <li>Bilim</li>
+                </a>
+                <a href="#">
+                    <li>Sanat</li>
+                </a>
+                <a href="#">
+                    <li>Mimarlık</li>
+                </a>
+                <a href="#">
+                    <li>Muhasebe</li>
+                </a>
+                <a href="#">
+                    <li>Ticaret</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sliderMenu">
+        <div class="p-5 col-6 mx-auto justify-content-center pagination align-items-lg-center text-center">
+            <i class="text-warning fa fa-cloud-upload pr-3 fa-5x"></i>
+            <h1 class="text-white font-weight-lighter">
+                <section class="text-warning">Hızlıca Dosyanı Yükle</section> <strong>1GB</strong>'a kadar Ücretsiz.
+            </h1>
+        </div>
+
+        <div class="p-3">
+            <div class="rounded-lg p-5 bg-white text-center col-12">
+                <div class="card-deck">
+
+                    <div id="uploadImg" class="card col-2 p-3">
+                        <div id="spinnerBorder" class="mt-5 spinner-border text-warning"></div>
+                        <i class="fa-5x fa fa-file-image-o text-black-50"></i><br>
+                        <span>Kapak görseli yükleniyor...</span>
+                    </div>
+
+                    <div id="uploadArea" class="card col-10 p-3 ">
+                        <i class="fa-5x fa fa-cloud-upload"></i>
+                        <h4>Yüklemek istediğiniz dosyayı buraya sürükleyin yada buraya tıklayın</h4>
+                        <div class="progress">
+                            <div id="progressBar"
+                                class="bg-warning progress-bar progress-bar-striped progress-bar-animated"
+                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 99%">
+                            </div>
+                        </div>
+                        <strong style="font-size: 150%;" id="progressText"></strong>
+                    </div>
+                </div>
+
+                <div class="informationCard">
+                    <h2>Bilgilendirme</h2>
+                    <p>Yüklenecek olan doküman formatı .pdf, .doc veya .docx uzantılı olmalıdır. Pdf dokümandaki sayfa
+                        nu bilgisi tam olarak
+                        içeriye aktarılacaktır. Microsoft word programı sayfa sayısını dinamik olarak hesapladığı için;
+                        .doc veya .docx uzantılı
+                        dokümanların içeriği 5000 karaktere bölünerek sayfa nu ataması yapılacaktır.</p>
+                </div>
+                <div class="longSpace">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="foot col-12 p-5">
+            <div class="pagination h6">
+                <div class="col-3 list-group pt-3">
+                    <h5 class="text-warning">Hakkımızda</h5>
+                    <a href="#" class="pt-3">Sanal kütüphane nedir?</a>
+                    <a href="#" class="pt-3">Özel teşekkür</a>
+                    <a href="#" class="pt-3">Blog</a>
+                    <a href="#" class="pt-3">Ekibe katıl</a>
+                    <a href="#" class="pt-3">İletişime geç</a>
+                </div>
+
+                <div class="col-3 list-group pt-3">
+                    <h5 class="text-warning">Destek</h5>
+                    <a href="#" class="pt-3">Sorun bildirin</a>
+                    <a href="#" class="pt-3">Yardım konuları</a>
+                </div>
+
+                <div class="col-3 list-group pt-3">
+                    <h5 class="text-warning">Yasal Bilgilendirme</h5>
+                    <a href="#" class="pt-3">Yükleme kuralları</a>
+                    <a href="#" class="pt-3">Telif hakları</a>
+                </div>
+
+                <div class="socialIcon col-3 pt-3">
+                    <h5 class="text-warning">İletişim</h5>
+                    <div class="blockquote text-lg-left ">
+                        <div class="text-warning h1 mt-4 mb-4">
+                            <a href="#"> <i class="fa fa-facebook-square "></i></a>
+                            <a href="#"> <i class="fa fa-instagram"></i></a>
+                            <a href="#"> <i class="fa fa-twitter-square"></i></a>
+                            <a href="#"> <i class="fa fa-linkedin-square"></i></a>
+                            <a href="#"> <i class="fa fa-youtube-square"></i></a>
+                        </div>
+
+                        <h6>Kozyatağı Mah. Bayar Cad.<br>Gülbahar Sk. No:17/123<br>P.K:34742
+                            Kadıköy/İstanbul<br><br>0(216)5990438<br>info@sanalkutuphane.org</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+            $('#catIcon').hover(function () {
+                $('#dropMenu').css('visibility', 'visible');
+            }),
+                $('#dropMenu').mouseleave(function () {
+                    $('#dropMenu').css('visibility', 'hidden');
+                });
+        });
+        let progressValue=document.getElementById("progressBar").style.width;
+        progressValue="%"+progressValue.substr(0,2)+" Dosya yükleniyor...";
+        document.querySelector("#progressText").innerHTML=progressValue;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:540px) {
+.socialIcon{
+    background-color: black;
+    
+}  
+}
+.navicon i:hover{
+    transform: translateY(5%);
+}
+.sliderMenu{
+   background: rgb(8, 14, 31);
+}
+.search{
+    text-align: center;
+    font-size: 25px;
+    width: 40vw;
+}
+.navicon{
+    font-size: 200%;
+    text-align: center;
+}
+.logo{
+    height: 4vw;
+    width: 14vw;
+}
+.dropMenu{
+    position: absolute;
+    margin-left: 15vw;
+    width: 250px;
+    height: 220px;
+    background-color: rgb(8, 14, 31);
+    visibility: hidden;
+    z-index: 1000;
+}
+.dropMenu ul{
+    padding: 5%;
+}
+.dropMenu ul a{
+    color: cornsilk;
+}
+.categories i{
+    font-size: 28px;
+}
+.categories span{
+    font-size: 20px;
+}
+.uploadIcon{
+    color: rgb(2, 15, 20);
+    text-align: center;
+    
+}
+.uploadIcon button{
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+}
+.uploadIcon button:hover{
+    background-color: transparent;
+    transform: translateY(5px);
+    border: none;
+}
+
+#profilePhoto{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: rgb(212, 212, 212);
+    color: rgb(158, 158, 158);
+}
+#leftMenu div:hover{
+    background: #ffd000;
+    cursor: pointer;
+}
+/* CSS3 */
+#rightClickMenu>a>li>i{
+    padding-right: 5%;
+    padding-left: 5%;
+}
+/* The whole thing Right click menu*/
+.custom-menu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    font-family: sans-serif;
+    background: #FFF;
+    color: #333;
+    border-radius: 5px;
+    padding: 0;
+}
+/* Each of the items in the list */
+.custom-menu li {
+    width: 24vw;
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style-type: none;
+    transition: all .3s ease;
+    user-select: none;
+}
+.custom-menu li:hover {
+    background-color: rgb(0, 106, 212);
+    color: #fff;
+}
+.foot{    
+    height: 50vh;
+    font-size: 50px;
+    background: rgb(43, 43, 73);
+    color: azure;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: #ffd100;
+}
+.socialIcon i{
+    color: #ffd000
+}
+.socialIcon i:hover{
+    color: #fff;
+    font-size: 50px;
+}

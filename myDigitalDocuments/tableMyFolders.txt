@@ -1,0 +1,22 @@
+<div>
+                            <table class="table table-borderless">
+                                <thead class="border-bottom border-dark">
+                                    <tr>
+                                        <th>Dosya adý</th>
+                                        <th>Türü</th>
+                                        <th>Dil</th>
+                                        <th class="pull-right mx-auto">Yükleme Tarihi</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="border-bottom">
+                                    <tr>
+                                        <td>ASDFG Lorem ipsum dolor sit </td>
+                                        <td>QWERTY</td>
+                                        <td>ZXCVB</td>
+                                        <td class="pull-right">DD MMM YYYY</td>
+                                        <td><i class="fa fa-eye"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>

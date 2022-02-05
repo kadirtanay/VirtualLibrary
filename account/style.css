@@ -1,0 +1,36 @@
+body{
+    background:rgb(13, 29, 48) !important;
+    overflow: hidden;
+}
+#eye{
+    color: darkgray;
+    float: right;
+    margin-top: -30px;
+    margin-right: 15px;
+    font-size: 25px;
+
+}
+.leftBox{
+    color: rgb(255, 255, 255);
+    
+}
+.rightBox{
+    background-color: gold;
+    color: indigo;
+    border-radius: 20px;
+    width: 120%;
+    height: 110%;
+    
+}
+#icon{
+    font-size: 250px;
+    color: rgb(255, 255, 255);
+}
+.smallFont{
+    font-size: small;
+    font-weight: bold;
+}
+.mediumFont{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

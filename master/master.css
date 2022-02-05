@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:479px) {
+    #dropMenu,.categories,#esnekArama,#milyonlarcaKelime,#search,#searchIcon,#faBell,#faUser,.uploadIcon{
+    display: none;
+    }
+
+    .sliderMenu{
+    height: 20%;
+   }
+   
+    img{
+        padding:10% ;
+    }
+    .logo{
+        padding: 0;
+        
+    }
+    nav{
+        height: 1%;
+    }
+    #suggestionMenu>a>div{
+        display:contents;
+        position: absolute;
+        }
+    #suggestionMenu{
+        justify-content: center;
+        
+        
+        }
+    #sizinIcın{
+        font-size: 1em;
+        display: contents;
+        
+    }
+
+}
+.navicon i:hover{
+    transform: translateY(5%);
+}
+.sliderMenu{
+   background: linear-gradient(rgb(71, 59, 6),rgb(160, 160, 6));
+}
+.search{
+    text-align: center;
+    font-size: 25px;
+    width: 40vw;
+}
+.navicon{
+    font-size: 200%;
+    text-align: center;
+}
+.logo{
+    height: 4vw;
+    width: 14vw;
+}
+.dropMenu{
+    margin-left: 19vw;
+    width: 300px;
+    height: 220px;
+    background-color: rgb(8, 14, 31);
+    visibility: hidden;
+}
+.dropMenu ul{
+    padding: 5%;
+}
+.dropMenu ul a{
+    color: cornsilk;
+}
+.categories i{
+    font-size: 28px;
+}
+.categories span{
+    font-size: 20px;
+}
+.uploadIcon{
+    color: rgb(2, 15, 20);
+    text-align: center;
+    
+}
+.uploadIcon button{
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+}
+.uploadIcon button:hover{
+    background-color: transparent;
+    transform: translateY(5px);
+    border: none;
+}
+.suggestionMenu{
+    background-color:  rgb(43, 43, 73);
+    color: #fff;
+}
+.suggestionMenu > div > div{
+    background-color: transparent;
+    border-color: transparent;
+}
+div>img{
+    width: 10vw;
+}
+a>div>img:hover{
+    width: 9vw;
+    transform:skew(4deg);
+}
+
+.saleCard{
+    padding: 5%;
+    width: 320px;
+    height: 450px;
+    background-color: white;
+    border-radius: 30px;
+}
+.saleCardTop{
+    width: 320px;
+    height: 180px;
+    text-align: center;
+    background-color: rgb(226, 226, 4);
+    border-radius: 30px 30px 0 0;
+}
+.saleCardBottom{
+    text-align:left;
+    font-size: 40px;
+    padding: 5%;
+    margin: 5%;
+}
+.saleCardBottom>div>button{
+    margin: 10%;
+    border: none;
+}
+#ortaPaket{
+    background: rgb(85, 85, 85);
+    color: #fff;
+}
+#ortaPaket>div{
+    background: rgb(255, 115, 0);
+}
+#platinPaket{
+    background: rgb(181, 192, 214);
+}
+#ultraPaket{
+    background: rgb(255, 155, 4);
+}
+.pagination>h6{
+    font-size: 17px;
+    padding-left: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 3%;
+}
+
+html,body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        
+
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+        
+      }
+#mySwiper{
+    background: rgb(52, 52, 88);
+    
+}
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        padding-left: 200px;
+        margin-left: -100px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+.btnRight{
+    position: fixed;
+    right: 0;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.whatSK:hover{
+    background: #ffd000;
+    border-radius: 30px;
+}
+
+
+
+.foot{
+    
+    height: 50vh;
+    font-size: 50px;
+    background: rgb(43, 43, 73);
+    color: azure;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: #ffd100;
+}
+.socialIcon i{
+    color: #ffd000
+}
+.socialIcon i:hover{
+    color: #fff;
+    font-size: 50px;
+}

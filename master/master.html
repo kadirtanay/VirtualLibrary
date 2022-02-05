@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+    <script src="../bootstrapJquery/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar col-auto ml-3 p-0">
+            <img class="logo" src="img/s.png" alt="#">
+
+            <div class="text-dark">
+                <div class="categories">
+                    <a href="#">
+                        <i id="catIcon" class="fa fa-bars text-warning"></i>
+                    </a>
+                    <span class="text-dark px-1 align-top">
+                        Kategoriler
+                    </span>
+                </div>
+
+            </div>
+            <div>
+                <div class="input-group">
+                    <input class="search input-group-text" type="search" name="search" id="search"
+                        placeholder="Merak ettiğin bir kelimeyi hemen bulalım">
+                    <div>
+                        <button class="btn btn-succes text-warning" type="submit">
+                            <i id="searchIcon" class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="uploadIcon bg-warning">
+                <button>
+                    <i class="fa fa-upload"></i>
+                </button>
+                <h5>
+                    &nbsp; Dosya yükle&nbsp;
+                </h5>
+
+
+            </div>
+
+
+            <div class="navicon">
+                <a href=""><i id="faBell" class="text-dark fa fa-bell mr-2"></i></a>
+                <a href=""><i id="faUser" class="text-dark fa fa-user mr-4"></i></a>
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="sliderMenu">
+        <div id="dropMenu" class="dropMenu">
+            <ul id="dropUl" class="list-inline pl-3">
+                <a href="#">
+                    <li>Sağlık</li>
+                </a>
+                <a href="#">
+                    <li>Edebiyat</li>
+                </a>
+                <a href="#">
+                    <li>Teknoloji</li>
+                </a>
+                <a href="#">
+                    <li>Bilim</li>
+                </a>
+                <a href="#">
+                    <li>Sanat</li>
+                </a>
+                <a href="#">
+                    <li>Mimarlık</li>
+                </a>
+                <a href="#">
+                    <li>Muhasebe</li>
+                </a>
+                <a href="#">
+                    <li>Ticaret</li>
+                </a>
+            </ul>
+        </div>
+        <div class="text-light pl-5 mt-5">
+            <h2 id="milyonlarcaKelime">Milyonlarca kelime arasında kaybolmayın</h2>
+        </div>
+        <div id="esnek" class="text-light text-white-50 pl-5 pb-5 col-5">
+            <h4 id="esnekArama">Esnek arama teknolojisi ile istediğiniz kelimeyi anında bulalım</h4>
+        </div>
+    </div>
+    <div>
+        <div class="suggestionMenu p-5">
+            <p id="sizinIcın" class="h1 p-5 text-warning">Sizin için Önerdiklerimiz</p>
+
+            <div id="suggestionMenu" class="pagination">
+                <a href="">
+                    <div class="pt-2 pl-5 pb-2 card-footer"><img src="img/1.jpg"></div>
+                </a>
+                <a href="">
+                    <div class="pt-2 pl-5 pb-2 card-footer"><img src="img/2.jpg"></div>
+                </a>
+                <a href="">
+                    <div class="pt-2 pl-5 pb-2 card-footer"><img src="img/3.jpg"></div>
+                </a>
+                <a href="">
+                    <div class="pt-2 pl-5 pb-2 card-footer"><img src="img/4.jpg"></div>
+                </a>
+                <a href="">
+                    <div class="pt-2 pl-5 pb-2 card-footer"><img src="img/5.jpg"></div>
+                </a>
+                <a href="">
+                    <div class="pt-2 pl-5 pb-2 card-footer"><img src="img/1.jpg"></div>
+                </a>
+            </div>
+            <div id="suggestionMenu" class="pagination">
+                <a href="">
+                    <div class="pt-2 pl-5 pb-2 card-footer"><img src="img/5.jpg"></div>
+                </a>
+                <a href="">
+                    <div class="pt-2 pl-5 pb-2 card-footer"><img src="img/3.jpg"></div>
+                </a>
+                <a href="">
+                    <div class="pt-2 pl-5 pb-2 card-footer"><img src="img/4.jpg"></div>
+                </a>
+                <a href="">
+                    <div class="pt-2 pl-5 pb-2 card-footer"><img src="img/2.jpg"></div>
+                </a>
+                <a href="">
+                    <div class="pt-2 pl-5 pb-2 card-footer"><img src="img/1.jpg"></div>
+                </a>
+                <a href="">
+                    <div class="pt-2 pl-5 pb-2 card-footer"><img src="img/5.jpg"></div>
+                </a>
+            </div>
+            <div class="mt-4 text-center">
+                <button class="btn btn-warning btn-lg pl-5 pr-5 ">Tümünü gör</button>
+                <a href="">
+                    <h5 class="text-warning mt-4">Paketler</h5>
+                </a>
+                <h5>Aylık kullanıcı paketleri</h5>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="mySwiper" class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="saleCard p-0">
+                    <div class="saleCardTop pt-3">
+                        <h2>Ücretsiz</h2>
+                        <div class="text-white bg-dark w-50 mx-auto mt-4 rounded-pill row">
+                            <h1 class="pl-3 ml-4">1</h1>
+                            <h5 class="align-self-center pl-3 mb-0">GB</h5>
+                        </div>
+                        <h2>₺0 <label class="small">/Aylık</label></h2>
+                    </div>
+
+                    <div class="saleCardBottom">
+                        <div class="pagination">
+                            <i id="faLock" class="fa fa-lock"></i>
+                            <h6 class="ml-2"><strong>1 GB</strong>'a kadar erişime kapalı belge kullanımı
+                            </h6>
+                        </div>
+                        <div class="pagination">
+                            <i id="faShare" class="fa fa-share-alt"></i>
+                            <h6> Sınırsız erişime açık belge kullanımı</h6>
+                        </div>
+                        <div>
+                            <button class="btn btn-warning btn-block w-50  mx-auto rounded-pill">
+                                <h4 class="font-weight-normal">Başla</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="saleCard p-0">
+                    <div id="ortaPaket" class="saleCardTop pt-3">
+                        <h2>Orta Paket</h2>
+                        <div class="text-white w-50 mx-auto mt-4 rounded-pill row">
+                            <h1 class="pl-3 ml-4">5</h1>
+                            <h5 class="align-self-center pl-3 mb-0">GB</h5>
+                        </div>
+                        <h2>₺299 <label class="small">/Aylık</label></h2>
+                    </div>
+
+                    <div class="saleCardBottom">
+                        <div class="pagination">
+                            <i id="faLock" class="fa fa-lock"></i>
+                            <h6 class="ml-2"><strong>5 GB</strong>'a kadar erişime kapalı belge kullanımı
+                            </h6>
+                        </div>
+                        <div class="pagination">
+                            <i id="faShare" class="fa fa-share-alt"></i>
+                            <h6> Sınırsız erişime açık belge kullanımı</h6>
+                        </div>
+                        <div>
+                            <button style="background: rgb(85,85,85); color: #fff;"
+                                class="btn btn-warning btn-block w-50  mx-auto rounded-pill">
+                                <h4 class="font-weight-normal">Satın Al</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="saleCard p-0">
+                    <div id="platinPaket" class="saleCardTop pt-3">
+                        <h2>Platinium Paket</h2>
+                        <div class="text-white bg-dark w-50 mx-auto mt-4 rounded-pill row">
+                            <h1 class="pl-3 ml-4">10</h1>
+                            <h5 class="align-self-center pl-3 mb-0">GB</h5>
+                        </div>
+                        <h2>₺499 <label class="small">/Aylık</label></h2>
+                    </div>
+                    <div class="saleCardBottom">
+                        <div class="pagination">
+                            <i id="faLock" class="fa fa-lock"></i>
+                            <h6 class="ml-2"><strong>10 GB</strong>'a kadar erişime kapalı belge kullanımı
+                            </h6>
+                        </div>
+                        <div class="pagination">
+                            <i id="faShare" class="fa fa-share-alt"></i>
+                            <h6> Sınırsız erişime açık belge kullanımı</h6>
+                        </div>
+                        <div>
+                            <button style="background: rgb(6, 8, 19); color: #fff;"
+                                class="btn btn-warning btn-block w-50  mx-auto rounded-pill">
+                                <h4 class="font-weight-normal">Satın Al</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="saleCard p-0">
+                    <div id="ultraPaket" class="text-white saleCardTop pt-3">
+                        <h2>Ultra Paket</h2>
+                        <div class="bg-dark w-50 mx-auto mt-4 rounded-pill row">
+                            <h1 class="pl-3 ml-4">100</h1>
+                            <h5 class="align-self-center pl-3 mb-0">GB</h5>
+                        </div>
+                        <h2>₺899 <label class="small">/Aylık</label></h2>
+                    </div>
+
+                    <div class="saleCardBottom">
+                        <div class="pagination">
+                            <i id="faLock" class="fa fa-lock"></i>
+                            <h6 class="ml-2"><strong>100 GB</strong>'a kadar erişime kapalı belge kullanımı
+                            </h6>
+                        </div>
+                        <div class="pagination">
+                            <i id="faShare" class="fa fa-share-alt"></i>
+                            <h6> Sınırsız erişime açık belge kullanımı</h6>
+                        </div>
+                        <div>
+                            <button style="background: rgb(255, 155, 4); color: rgb(255, 255, 255);"
+                                class="btn btn-warning btn-block w-50  mx-auto rounded-pill">
+                                <h4 class="font-weight-normal">Satın Al</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 text-center p-5">
+        <h3>Neden Sanal Kütüphane ?</h3>
+        <div class="pagination">
+            <div class="col-4 p-5 whatSK">
+                <i class="fa fa-shield fa-5x "></i>
+                <p>Yüklediğiniz tüm belgeler <br> en yüksek seviyede korunmaktadır.</p>
+            </div>
+            <div class="col-4 p-5 whatSK">
+                <i class="fa fa-share-alt fa-5x"></i>
+                <p>Dijital içeriklerinizi şirket içindeki <br> farklı kullanıcılarla paylaşabilirsiniz.</p>
+            </div>
+            <div class="col-4 p-5 ">
+                <i class="fa fa-cloud-download fa-5x"></i>
+                <p>1 GB Ücretsiz kullanımı özelliği ile <br> İnternet olan heryerden erişebilirsiniz.</p>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <div class="col-4 p-5 whatSK">
+                <i class="fa fa-file-code-o fa-5x"></i>
+                <p>Tüm Belgelerinizin içinde hızlıca arama yapın</p>
+            </div>
+            <div class="col-4 p-5 whatSK">
+                <i class="fa fa-file-code-o fa-5x"></i>
+                <p>Tüm Belgelerinizin içinde hızlıca arama yapın</p>
+            </div>
+            <div class="col-4 p-5 whatSK">
+                <i class="fa fa-file-code-o fa-5x"></i>
+                <p>Tüm Belgelerinizin içinde hızlıca arama yapın</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="foot col-12 p-5">
+            <div class="pagination h6">
+                <div id="clearBoth" class="col-3 list-group pt-3">
+                    <h5 class="text-warning">Hakkımızda</h5>
+                    <a href="#" class="pt-3">Sanal kütüphane nedir?</a>
+                    <a href="#" class="pt-3">Özel teşekkür</a>
+                    <a href="#" class="pt-3">Blog</a>
+                    <a href="#" class="pt-3">Ekibe katıl</a>
+                    <a href="#" class="pt-3">İletişime geç</a>
+                </div>
+
+                <div id="clearBoth" class="col-3 list-group pt-3">
+                    <h5 class="text-warning">Destek</h5>
+                    <a href="#" class="pt-3">Sorun bildirin</a>
+                    <a href="#" class="pt-3">Yardım konuları</a>
+                </div>
+
+                <div id="clearBoth" class="col-3 list-group pt-3">
+                    <h5 class="text-warning">Yasal Bilgilendirme</h5>
+                    <a href="#" class="pt-3">Yükleme kuralları</a>
+                    <a href="#" class="pt-3">Telif hakları</a>
+                </div>
+
+                <div id="clearBoth" class="socialIcon col-3 pt-3">
+                    <h5 class="text-warning">İletişim</h5>
+                    <div class="blockquote text-lg-left ">
+                        <div class="text-warning h1 mt-4 mb-4">
+                            <a href="#"> <i class="fa fa-facebook-square "></i></a>
+                            <a href="#"> <i class="fa fa-instagram"></i></a>
+                            <a href="#"> <i class="fa fa-twitter-square"></i></a>
+                            <a href="#"> <i class="fa fa-linkedin-square"></i></a>
+                            <a href="#"> <i class="fa fa-youtube-square"></i></a>
+                        </div>
+
+                        <h6 id="clearBoth">Kozyatağı Mah. Bayar Cad.<br>Gülbahar Sk. No:17/123<br>P.K:34742
+                            Kadıköy/İstanbul<br><br>0(216)5990438<br>info@sanalkutuphane.org</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="swiper-bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('#catIcon').hover(function () {
+                $('#dropMenu').css('visibility', 'visible');
+            }),
+                $('#dropMenu').mouseleave(function () {
+                    $('#dropMenu').css('visibility', 'hidden');
+                });
+
+        });
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+
+
+
+    </script>
+
+</body>
+
+</html>

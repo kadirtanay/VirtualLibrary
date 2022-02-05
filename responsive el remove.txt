@@ -1,0 +1,4 @@
+$(window).resize(function(){
+if(window.innerWidth<500){
+$("#element").removeAttr("style");
+}});
